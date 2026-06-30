@@ -1,0 +1,232 @@
+/* ===========================================
+            LAPTOP (1200px)
+=========================================== */
+
+@media(max-width:1200px){
+
+    section{
+
+        width:92%;
+    }
+
+    .navbar{
+
+        width:92%;
+    }
+
+    #home{
+
+        gap:40px;
+    }
+
+    .profile-image img{
+
+        width:300px;
+        height:300px;
+    }
+
+}
+
+
+/* ===========================================
+            TABLET (992px)
+=========================================== */
+
+@media(max-width:992px){
+
+    .navbar{
+
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    #home{
+
+        flex-direction:column-reverse;
+        text-align:center;
+
+        padding-top:140px;
+    }
+
+    .home-content{
+
+        width:100%;
+    }
+
+    .home-content p{
+
+        margin:auto;
+        margin-bottom:30px;
+    }
+
+    .home-buttons{
+
+        justify-content:center;
+    }
+
+    .social-links{
+
+        justify-content:center;
+    }
+
+    .profile-image{
+
+        margin-bottom:20px;
+    }
+
+    .profile-image img{
+
+        width:260px;
+        height:260px;
+    }
+
+    section{
+
+        padding:70px 0;
+    }
+
+}
+
+
+/* ===========================================
+                MOBILE (768px)
+=========================================== */
+
+@media(max-width:768px){
+
+    section h2{
+
+        font-size:32px;
+    }
+
+    .logo{
+
+        font-size:24px;
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    #home{
+
+        padding-top:200px;
+    }
+
+    .home-content h1{
+
+        font-size:42px;
+    }
+
+    .home-content h3{
+
+        font-size:24px;
+    }
+
+    .home-content p{
+
+        font-size:15px;
+    }
+
+    .home-buttons{
+
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn{
+
+        width:220px;
+        text-align:center;
+    }
+
+    .social-links{
+
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .profile-image img{
+
+        width:220px;
+        height:220px;
+    }
+
+    .skills-grid{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .project-grid{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* ===========================================
+            SMALL MOBILE (576px)
+=========================================== */
+
+@media(max-width:576px){
+
+    section{
+
+        width:94%;
+    }
+
+    .home-content h1{
+
+        font-size:34px;
+    }
+
+    .home-content h3{
+
+        font-size:20px;
+    }
+
+    .home-content p{
+
+        font-size:14px;
+    }
+
+    .profile-image img{
+
+        width:180px;
+        height:180px;
+    }
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .timeline-item,
+    .education-card,
+    .project-card{
+
+        padding:18px;
+    }
+
+    .project-card h3{
+
+        font-size:20px;
+    }
+
+    footer{
+
+        font-size:14px;
+    }
+
+}

@@ -1,0 +1,371 @@
+/* ====================================
+   GOOGLE FONT
+==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ====================================
+   RESET
+==================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ====================================
+   CONTAINER
+==================================== */
+section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:90px 0;
+}
+
+section h2{
+    text-align:center;
+    font-size:2.2rem;
+    color:#1e3a5f;
+    margin-bottom:45px;
+    position:relative;
+}
+
+section h2::after{
+    content:'';
+    width:70px;
+    height:3px;
+    background:#1e3a5f;
+    position:absolute;
+    bottom:-12px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* ====================================
+   NAVBAR
+==================================== */
+header{
+    width:100%;
+    background:#ffffff;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#1e3a5f;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:28px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#1e3a5f;
+}
+
+/* ====================================
+   HOME
+==================================== */
+#home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    min-height:100vh;
+}
+
+.home-content{
+    flex:1;
+}
+
+.home-content h4{
+    color:#666;
+    font-size:1.1rem;
+}
+
+.home-content h1{
+    font-size:3.4rem;
+    color:#1e3a5f;
+    margin:10px 0;
+}
+
+.home-content h3{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.home-content p{
+    color:#555;
+    max-width:600px;
+    margin-bottom:30px;
+}
+
+/* ====================================
+   BUTTONS
+==================================== */
+.home-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#1e3a5f;
+    color:#fff;
+    padding:12px 28px;
+    text-decoration:none;
+    border-radius:6px;
+    transition:.3s;
+    display:inline-block;
+}
+
+.btn:hover{
+    background:#16304f;
+}
+
+.secondary{
+    background:#fff;
+    border:2px solid #1e3a5f;
+    color:#1e3a5f;
+}
+
+.secondary:hover{
+    background:#1e3a5f;
+    color:#fff;
+}
+
+/* ====================================
+   SOCIAL LINKS
+==================================== */
+.social-links{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:#1e3a5f;
+    font-weight:600;
+}
+
+.social-links i{
+    margin-right:6px;
+}
+
+/* ====================================
+   PROFILE IMAGE
+==================================== */
+.profile-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.profile-image img{
+    width:340px;
+    height:340px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid #fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* ====================================
+   ABOUT
+==================================== */
+#about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    color:#555;
+}
+
+/* ====================================
+   SKILLS
+==================================== */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#fff;
+    padding:18px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    font-weight:600;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+/* ====================================
+   EXPERIENCE & EDUCATION
+==================================== */
+.timeline-item,
+.education-card{
+    background:#fff;
+    padding:25px;
+    margin-bottom:25px;
+    border-left:5px solid #1e3a5f;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.timeline-item h3,
+.education-card h3{
+    color:#1e3a5f;
+    margin-bottom:8px;
+}
+
+.timeline-item span{
+    color:#777;
+    font-size:.95rem;
+}
+
+/* ====================================
+   PROJECTS
+==================================== */
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#fff;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+}
+
+.project-card h3{
+    color:#1e3a5f;
+    margin-bottom:10px;
+}
+
+.tech-stack{
+    color:#2563eb;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+.project-card ul{
+    margin:15px 0 20px 20px;
+}
+
+.project-card a{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    background:#1e3a5f;
+    padding:10px 18px;
+    border-radius:5px;
+}
+
+.project-card a:hover{
+    background:#16304f;
+}
+
+/* ====================================
+   CERTIFICATIONS
+==================================== */
+#certifications ul{
+    max-width:700px;
+    margin:auto;
+    list-style:none;
+}
+
+#certifications li{
+    background:#fff;
+    padding:16px;
+    margin-bottom:15px;
+    border-left:4px solid #1e3a5f;
+    border-radius:6px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+/* ====================================
+   RESUME
+==================================== */
+#resume{
+    text-align:center;
+}
+
+#resume p{
+    margin-bottom:25px;
+}
+
+/* ====================================
+   CONTACT
+==================================== */
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:12px 0;
+}
+
+#contact a{
+    color:#1e3a5f;
+    text-decoration:none;
+    font-weight:600;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+/* ====================================
+   FOOTER
+==================================== */
+footer{
+    background:#1e3a5f;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
